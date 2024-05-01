@@ -97,6 +97,8 @@
 
 ## Mutation Rates: how are mutation rates sampled along each branch of the viral time phylogeny?
 #### Model: `Truncated Normal`
+--mutation_rate_loc 1.62633921e-04
+--mutation_rate_scale 6.80822878e-05
 - Other distributions deviate significantly from real distributions, so we use Truncated Normal (FAVITES).
 #### mu (Location parameter, analagous to the mean of a normal distribution): `0.0008`
 - ????
