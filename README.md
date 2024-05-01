@@ -8,7 +8,7 @@
 #### m (number of edges attached from new to existing nodes): `2`
 - There are estimates of between 3-4 sexual partners over 10 years: ~3 in Wertheim et al. (2017) and 3-4 in Rosenberg et al. (2017). Expected degree (number of partners) is equal to 2*m, so we set m to 2.
 
-#### Transmission Network: Describe how the virus moves through the contact network, based on transition rates for individuals in our simulation. Transition rates are based on the reciprocal of expected time to arrival (make sure to keep track of your 'time' units!).
+## Transmission Network: Describe how the virus moves through the contact network, based on transition rates for individuals in our simulation. Transition rates are based on the reciprocal of expected time to arrival (make sure to keep track of your 'time' units!).
 #### Model: `Granich et al. (2008)`
 - The model uses states based on HIV progression, including states for indidividuals on ART (antiretroviral therapy) and states for those who are not. Whether or not a node is on ART, there are 4 stages of progression: 1, 2, 3 and 4. Granich et al. (2008)
 #### Duration: `10`
