@@ -23,15 +23,15 @@
 #### S --> I1 (transition rate from susceptible to infected stage 1): `2`
 - Based on MSM populations (Grey et al. (2016)), with San Diego County's estimation being 1,204,728. Between 2017 and 2021 in California, an average of 70% of new diagnoses came from male-to-male sexual contact (MMSC) (California HIV Suveillance Report -- 2021). In 2021, there were 379 new HIV diagnoses in San Diego (CA Surveillance Report). So out of 379 diagnoses and an estimated 70% of those coming from MMSC, we can estimate there are about 265 diagnoses for MSM. Looking at the whole population: 265/1,204,728 = 0.00022. Scaling this to our chosen number of nodes: 10,000 * 0.00022 = 2.2 diagnoses a year. In a Poisson distribution, the expected value (2) will be equal to the reciprocal of the time until next arrival.
 #### S --> I1 induced by neighbors in I1: `0.1125`
-- In the FAVITES paper, relative rates were scaled so that number of new cases over ten years was roughly accurate. This yielded a rate of infectiousness 0.1125.
+- In the FAVITES paper, relative rates were scaled so that number of new cases over ten years was roughly accurate. This yielded a rate of infectiousness 0.1125. Expected time for arrival would be 1/(0.1125 * n), n being the number of nodes in state I1 that are neighbors to the current node.
 #### S --> I1 induced by neighbors in I2: `0.0225`
-- In the FAVITES paper, relative rates were scaled so that number of new cases over ten years was roughly accurate. Infectivity of chronic nodes was used as a baseline.
+- In the FAVITES paper, relative rates were scaled so that number of new cases over ten years was roughly accurate. Infectivity of chronic nodes was used as a baseline. Expected time for arrival would be 1/(0.1125 * n), n being the number of nodes in state I2 that are neighbors to the current node.
 #### S --> I1 induced by neighbors in I3: `0.0225`
-- Set this to be the same as above (??)
+- Set this to be the same as above (??). Expected time for arrival would be 1/(0.1125 * n), n being the number of nodes in state I3 that are neighbors to the current node.
 #### S --> I1 induced by neighbors in I4: `0.0225`
-- In the FAVITES paper, relative rates were scaled so that number of new cases over ten years was roughly accurate. Infectivity of chronic nodes was used as a baseline.
+- In the FAVITES paper, relative rates were scaled so that number of new cases over ten years was roughly accurate. Infectivity of chronic nodes was used as a baseline. Expected time for arrival would be 1/(0.1125 * n), n being the number of nodes in state I3 that are neighbors to the current node.
 #### S --> I1 induced by neighbors in A1: `0.005625`
-- Those in the acute treated stage were found to have 1/20 the infectiousness of chronic untreated individuals (Cohen et al. (2011)).
+- Those in the acute treated stage were found to have 1/20 the infectiousness of chronic untreated individuals (Cohen et al. (2011)). Expected time for arrival would be 1/(0.0.005625 * n), n being the number of nodes in state A1 that are neighbors to the current node.
 #### S --> I1 induced by neighbors in A2: `0`
 #### S --> I1 induced by neighbors in A3: `0`
 #### S --> I1 induced by neighbors in A4: `0`
