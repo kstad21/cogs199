@@ -1,7 +1,7 @@
 # FAVITES Configuration File for MSM Population in San Diego
 
 ## Contact Network: Through nodes (people) and edges (interactions), describe social interactions.
-### Model: Barabasi-Albert (BA)
+### Model: `Barabasi-Albert (BA)`
 - Uses preferential attachment, so nodes with more connections are likely to make connections (think about how someone with lots of friends might be more likely to make even more friends).
 ### Number of nodes: 10000
 - Picked an even, easy to work with number.
