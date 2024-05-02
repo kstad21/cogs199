@@ -89,11 +89,11 @@
 
 ## Viral Phylogeny (Seeds): Describe the topology and branch lengths (in unit of time) of the viral phylogeny of the seed individuals.
 #### Model: `Non-Homogeneous Yule`
-- asdf
+- (???)
 #### rate_func (Rate function of the initial tree): e^-(t^2)+1
 - Chosen to emulate short branches close to the base of the tree. (FAVITES)
 #### height: 25
-- Scaled so that height matches the 1980 estimate using SD. (???)
+- Scaled so that height matches the 1980 tMRCA estimate using SD. (???)
 
 ## Mutation Rates: how are mutation rates sampled along each branch of the viral time phylogeny?
 #### Model: `Truncated Normal`
