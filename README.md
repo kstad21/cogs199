@@ -1,6 +1,7 @@
 # FAVITES Configuration File for MSM Population in San Diego
 
-## Contact Network: Through nodes (people) and edges (interactions), describe social interactions.
+## Contact Network:
+### Through nodes (people) and edges (interactions), describe social interactions.
 #### Model: `Barabasi-Albert (BA)`
 - Uses preferential attachment, so nodes with more connections are likely to make connections (think about how someone with lots of friends might be more likely to make even more friends).
 #### Number of nodes: `10000`
@@ -8,7 +9,8 @@
 #### m (number of edges attached from new to existing nodes): `2`
 - There are estimates of between 3-4 sexual partners over 10 years: ~3 in Wertheim et al. (2017) and 3-4 in Rosenberg et al. (2017). Expected degree (number of partners) is equal to 2*m, so we set m to 2.
 
-## Transmission Network: Describe how the virus moves through the contact network, based on transition rates for individuals in our simulation. Transition rates are based on the reciprocal of expected time to arrival (make sure to keep track of your 'time' units!).
+## Transmission Network: 
+### Describe how the virus moves through the contact network, based on transition rates for individuals in our simulation. Transition rates are based on the reciprocal of expected time to arrival (make sure to keep track of your 'time' units!).
 #### Model: `Granich et al. (2008)`
 - The model uses states based on HIV progression, including states for indidividuals on ART (antiretroviral therapy) and states for those who are not. Whether or not a node is on ART, there are 4 stages of progression: 1, 2, 3 and 4. Granich et al. (2008)
 #### Duration: `10`
@@ -75,7 +77,8 @@
 #### A4 --> I4: `0.481`
 - Expected time to stop ART is 25 months. 1/(25/12) ~ 0.481. (FAVITES)
 
-## Sample Times: how are individuals in the transmission network sampled?
+## Sample Times: 
+### How are individuals in the transmission network sampled?
 #### Model: `End`
 - End was chosen to get a good idea of every node's state at the end of the simulation.
 #### sampled_states (Comma-separated list of states in which individuals are sampled): `I1,I2,I3,I4,A1,A2,A3,A4`
@@ -83,11 +86,13 @@
 #### num_samples: `1`
 - With this sampling configuration, we choose to sample every single individual once at the end of the simulation.
 
-## Viral Phylogeny (Transmissions): With a coalescent framework, describe topology and branch lengths (in unit of time) of the viral phylogeny throughout the epidemic under the constraints of our chosen transmission network.
+## Viral Phylogeny (Transmissions): 
+### With a coalescent framework, describe topology and branch lengths (in unit of time) of the viral phylogeny throughout the epidemic under the constraints of our chosen transmission network.
 #### Model: `Transmission Tree`
 - In a transmission tree, nodes are infected hosts; edges are transmission events. Coalescent events occur as late in time as possible.
 
-## Viral Phylogeny (Seeds): Describe the topology and branch lengths (in unit of time) of the viral phylogeny of the seed individuals.
+## Viral Phylogeny (Seeds): 
+### Describe the topology and branch lengths (in unit of time) of the viral phylogeny of the seed individuals.
 #### Model: `Non-Homogeneous Yule`
 - (???)
 #### rate_func (Rate function of the initial tree): e^-(t^2)+1
@@ -95,7 +100,8 @@
 #### height: 25
 - Scaled so that height matches the 1980 tMRCA estimate using SD. (???)
 
-## Mutation Rates: how are mutation rates sampled along each branch of the viral time phylogeny?
+## Mutation Rates: 
+### How are mutation rates sampled along each branch of the viral time phylogeny?
 #### Model: `Truncated Normal`
 --mutation_rate_loc 1.62633921e-04
 --mutation_rate_scale 6.80822878e-05
@@ -107,7 +113,8 @@
 #### a (Minimum of Truncated Normal): `0`
 #### b (Maximum of Truncated Normal): `infinity??`
 
-## Ancestral Sequence: Describe how ancestral (root) sequence is generated/selected.
+## Ancestral Sequence: 
+### Describe how ancestral (root) sequence is generated/selected.
 #### Model: `Exact Base Frequencies`
 - A simple option with the ability to define the frequency of each base.
 #### k (Length of ancestral sequence): `1000`
@@ -118,7 +125,8 @@
 #### p_T (Frequency of T): `0.25`
 - Easily changeable; chose a simple even distribution of all the bases.
 
-## Sequence Evolution: Describe how sequences evolve down the phylogeny.
+## Sequence Evolution: 
+### Describe how sequences evolve down the phylogeny.
 #### Model: `General Time-Reversible (GTR) + Gamma`
 - General Time-Reversible "doesn't care" whether a sequence is an ancestor or descendent. The Gamma parameter allows the number of substitutions per site to change, as sampled from the Gamma distribution.
 #### p_A (Frequency of A): `0.392`
