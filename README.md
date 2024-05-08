@@ -94,11 +94,11 @@
 ## Viral Phylogeny (Seeds): 
 ### Describe the topology and branch lengths (in unit of time) of the viral phylogeny of the seed individuals.
 #### Model: `Non-Homogeneous Yule`
-- (???)
+- Real HIV trees have short internal branches close to the root and long leaves (cite or link to pic?). Since most phylogenetic models don't produce this shape easily, a rate function that is high early in the timeline, decreasing as time progresses, can be used in non-homogeneous Yule processes to replicate a pattern reminiscent of real HIV trees.
 #### rate_func (Rate function of the initial tree): e^-(t^2)+1
 - Chosen to emulate short branches close to the base of the tree. (FAVITES)
-#### height: 25
-- Scaled so that height matches the 1980 tMRCA estimate using SD. (???)
+#### height: '36'
+- Scaled so that height matches the 1980 tMRCA estimate using SD.
 
 ## Mutation Rates: 
 ### How are mutation rates sampled along each branch of the viral time phylogeny?
@@ -119,10 +119,10 @@
 - A simple option with the ability to define the frequency of each base.
 #### k (Length of ancestral sequence): `1000`
 - An even number large enough for some detail but not large enough to take a long time (??)
-#### p_A (Frequency of A): `0.25`
-#### p_C (Frequency of C): `0.25`
-#### p_G (Frequency of G): `0.25`
-#### p_T (Frequency of T): `0.25`
+#### p_A (Frequency of A): `0.392`
+#### p_C (Frequency of C): `0.164`
+#### p_G (Frequency of G): `0.212`
+#### p_T (Frequency of T): `0.232`
 - Easily changeable; chose a simple even distribution of all the bases.
 
 ## Sequence Evolution: 
@@ -133,7 +133,7 @@
 #### p_C (Frequency of C): `0.164`
 #### p_G (Frequency of G): `0.212`
 #### p_T (Frequency of T): `0.232`
-#### r_A-C (Transition rate between A and C): `0.182`
+#### r_A-C (Transition rate between A and C): `1.812`
 #### r_A-G (Transition rate between A and G): `9.934`
 #### r_A-T (Transition rate between A and T): `0.718`
 #### r_C-G (Transition rate between C and G): `0.971`
