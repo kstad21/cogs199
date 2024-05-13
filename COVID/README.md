@@ -4,9 +4,9 @@
 ### Through nodes (people) and edges (interactions), describe social interaction.
 #### `Model`: Barabasi-Albert (BA)
 - rationale
-#### Number of nodes: `10000`
+#### `Number of nodes`: 10000
 - Picked an even, easy to work with number.
-#### m (# edges attached from new to existing nodes): `8`
+#### `m (# edges attached from new to existing nodes)`: 8
 - rationale
 
 
