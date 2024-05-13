@@ -21,11 +21,11 @@ ___
 - rationale
 
 #### N_S: `value`
-##### The number of susceptible individuals at the start of the simulation
+- The number of susceptible individuals at the start of the simulation
 - rationale
 
 #### N_A: `value `
-##### The number of unascertained cases at the start of the simulation
+- The number of unascertained cases at the start of the simulation
 - rationale
 
 #### N_P: `value `
