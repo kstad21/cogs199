@@ -1,7 +1,7 @@
 # FAVITES Configuration File for COVID in Wuhan, 2020
 
 ## Contact Network:
-### Through nodes (people) and edges (interactions), describe social interaction.
+#### Through nodes (people) and edges (interactions), describe social interaction.
 #### Model: `Barabasi-Albert (BA)`
 - rationale
 #### Number of nodes: `10000`
@@ -12,7 +12,7 @@ ___
 
 
 ## Transmission Network:
-#### Describe how the virus moves through the contact network, based on transition rates for individuals in our simulation. Transition rates are based on the reciprocal of expected time to arrival (make sure to keep track of your 'time' unites!). 
+#### Describe how the virus moves through the contact network, based on transition rates for individuals in our simulation. Transition rates are based on the reciprocal of expected time to arrival (make sure to keep track of your 'time' units!). 
 #### Model: SAPHIRE
 - rationale
 - S: Susceptible; A: Unascertained case; P: Presymptomatic Infectious Case; H: Hospitalized Case; I: Ascertained Infectious Case; R: Removed; E: Exposed
