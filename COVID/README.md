@@ -84,3 +84,27 @@ ___
 ___
 
 ## Sample Times:
+#### Describe when the individuals in the transmission network are sampled (sequenced). 
+#### Model: `value`
+- rationale
+
+___
+## Viral Phylogeny (Transmissions):
+#### Describe the topology and branch lengths (in time units) of the viral phylogeny thoughout the epidemic, constrained by the transmission network.
+#### Model: `Transmission Tree`
+- rationale
+___
+## Viral Phylogeny (Seeds):
+#### Describe the topology and branch lengths (in time units) of the viral phylogeny prior to the epidemic (viral phylogeny of the seed individuals).
+#### Model: `value`
+- rationale
+___
+## Mutation Rates:
+#### Describe how mutation rates (mutations/time) are sample along each branch of the viral time phylogeny.
+#### Model: `value`
+- rationale
+___
+## Ancestral Sequence:
+#### Describe how the ancestral (root) sequence is generated/selected.
+#### Model: `value`
+- rationale
