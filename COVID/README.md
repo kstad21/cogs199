@@ -9,25 +9,33 @@
 #### m (# edges attached from new to existing nodes): `8`
 - rationale
 
+
+
 ## Transmission Network:
 ### Describe how the virus moves through the contact network, based on transition rates for individuals in our simulation. Transition rates are based on the reciprocal of expected time to arrival (make sure to keep track of your 'time' unites!). 
 #### Model: SAPHIRE
 - rationale
 - S: Susceptible; A: Unascertained case; P: Presymptomatic Infectious Case; H: Hospitalized Case; I: Ascertained Infectious Case; R: Removed; E: Exposed
+
 #### Duration: `100 days`
 - rationale
+
 #### N_S: `value`
 ##### The number of susceptible individuals at the start of the simulation
 - rationale
+
 #### N_A: `value `
 ##### The number of unascertained cases at the start of the simulation
 - rationale
+
 #### N_P: `value `
 ##### The number of presymptomatic individuals at the start of the simulation
 - rationale
+
 #### N_H: `value `
 ##### The number of hospitalized individuals at the start of the simulation
 - rationale
+
 #### N_I: `value`
 ##### The number of ascertained infectious cases at the start of the simulation
 - rationale
