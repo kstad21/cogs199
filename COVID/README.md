@@ -142,6 +142,6 @@ ___
 #### num_cats: `0`
 - The number of categories in discrete Gamma model (or 0 for continuous)
 - rationale
-#### prop_invariable: `(???)`
+#### prop_invariable: `(???)0.0001`
 - Proportion of invariable sites
-- (???)
+- See supplementary table 1 [invariant sites?](https://link.springer.com/article/10.1007/s42770-020-00321-1)
