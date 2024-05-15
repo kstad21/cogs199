@@ -26,7 +26,7 @@ ___
 
 #### N_A: `0`
 - The number of unascertained cases at the start of the simulation
-- At the start of the simulation, there are no unascertained (potentially including asymptomatic and mildly symptomatic individuals, Hao et al.) cases yet.
+- At the start of the simulation, there are no unascertained ([potentially including asymptomatic and mildly symptomatic individuals](https://www.nature.com/articles/s41586-020-2554-8)) cases yet.
 
 #### N_P: `0 `
 - The number of presymptomatic individuals at the start of the simulation
