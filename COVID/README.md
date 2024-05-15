@@ -14,7 +14,7 @@ ___
 ## Transmission Network:
 #### Describe how the virus moves through the contact network, based on transition rates for individuals in our simulation. Transition rates are based on the reciprocal of expected time to arrival (make sure to keep track of your 'time' units!). 
 #### Model: SAPHIRE
-- This model was developed specifically to illustrate the dynamics of COVID-19 transmission, with states to model presymptomatic phases, testing, hospitalization, and more. See below for each state and its abbreviation. 
+- This model was developed specifically to illustrate the dynamics of COVID-19 transmission, with states to model presymptomatic phases, testing, hospitalization, and more. See below for each state and its abbreviation ([Hao et. al](https://www.nature.com/articles/s41586-020-2554-8)).
 - S: Susceptible; A: Unascertained case; P: Presymptomatic Infectious Case; H: Hospitalized Case; I: Ascertained Infectious Case; R: Removed; E: Exposed
 
 #### Duration: `100 days`
@@ -53,7 +53,7 @@ ___
 - (???) Exposed neighbors can't expose someone else if they are not infected (knowingly or unknowingly). 
 #### R_S-E_P: `4.83`
 - The transtion rate from susceptible to exposed induced by presymptomatic neighbors 
-- See table S7; The ratio of transmission of unascertained to ascertained cases is 0.55 and the transmission rate of ascertained cases is 0.385. There are an estimated 16 contacts per day. To get the transmission rate, we perform $`0.55*0.385*365/16`$
+- See table S7; The ratio of transmission of unascertained to ascertained cases is 0.55 and the transmission rate of ascertained cases is 0.385. There are an estimated 16 contacts per day. To get the transmission rate, we perform $`0.55*0.385*365/16`$.
 #### R_S-E_I: `8.78`
 - The transition rate from susceptible to exposed induced by ascertained infectious neighbors
 - See table S7; The transmission rate of ascertained cases is 0.385. There are an estimated 16 contacts per day. To get the transmission rate, we perform $0.385*365/16$.
