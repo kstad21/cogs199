@@ -129,7 +129,7 @@ ___
 ## Sequence Evolution:
 #### Describe how sequences evolve down the phylogeny.
 #### Model: `General Time-Reversible (GTR) + Gamma`
-- rationale (???)
+- Adding on the Gamma parameter to the GTR model allows for variance in substitution probabilities for different sites. 
 #### p_A: `0.299`
 #### p_C: `0.184`
 #### p_G: `0.196`
@@ -142,10 +142,10 @@ ___
 #### r_G-T: `1.00000`
 #### alpha: `0.194`
 - The shape parameter of Gamma model of rate heterogeneity
-- rationale
+- We pull substitution probabilities from a Gamma distribution. An alpha of < 1 tells us that there is a lot of variance between substitution sites. 
 #### num_cats: `0`
 - The number of categories in discrete Gamma model (or 0 for continuous)
-- rationale
+- We are using a continuous Gamma distribution, so there are no categories. 
 #### prop_invariable: `(???)0.0001`
 - Proportion of invariable sites
 - See supplementary table 1 [invariant sites?](https://link.springer.com/article/10.1007/s42770-020-00321-1)
