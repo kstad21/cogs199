@@ -85,8 +85,12 @@ ___
 
 ## Sample Times:
 #### Describe when the individuals in the transmission network are sampled (sequenced). 
-#### Model: `value`
-- (???) do we want to model that people get sequenced when they go to the hospital? Or just do normal? Or do state entry (all?)
+#### Model: `Uniform`
+- "For each infected individual in these simulations, a single viral lineage was randomly sampled uniformly across the duration of infection to represent viral genotype sampling" (Pekar et. all supplemental).
+#### sampled_states: `I`
+- We want to sample individuals once they are ascertained ....
+#### num_samples: 1
+- Each individual in state I is sampled once. 
 
 ___
 ## Viral Phylogeny (Transmissions):
@@ -96,8 +100,8 @@ ___
 ___
 ## Viral Phylogeny (Seeds):
 #### Describe the topology and branch lengths (in time units) of the viral phylogeny prior to the epidemic (viral phylogeny of the seed individuals).
-#### Model: `(???)`
-- (???)
+#### Model: `Coalescent (Neutral)`
+- (???) "For each infected individual in these simulations, a single viral lineage was randomly sampled uniformly across the duratiton of infection to represent viral genotype sampling. If a simulation failed to converge, it was rerun until it successfully achieved coalescence'...
 ___
 ## Mutation Rates:
 #### Describe how mutation rates (mutations/time) are sample along each branch of the viral time phylogeny.
