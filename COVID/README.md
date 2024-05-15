@@ -53,34 +53,34 @@ ___
 - (???) Exposed neighbors can't expose someone else if they are not infected (knowingly or unknowingly). 
 #### R_S-E_P: `4.83`
 - The transtion rate from susceptible to exposed induced by presymptomatic neighbors 
-- See table S7; 0.55*0.385*365/16
+- See table S7; The ratio of transmission of unascertained to ascertained cases is 0.55 and the transmission rate of ascertained cases is 0.385. There are an estimated 16 contacts per day. To get the transmission rate, we perform $0.55*0.385*365/16$
 #### R_S-E_I: `8.78`
 - The transition rate from susceptible to exposed induced by ascertained infectious neighbors
-- See table S7; 0.385*365/16
+- See table S7; The transmission rate of ascertained cases is 0.385. There are an estimated 16 contacts per day. To get the transmission rate, we perform $0.385*365/16$.
 #### R_S-E_A: `4.83`
 - The transition rate from susceptible to exposed induced by unascertained neighbors
-- See table S7; 0.55*0.385*365/16
+- See table S7; We perform the same calculation as we did for R_S-E_P, as unascertained neighbors infect others because they are presymptomatic. (???)
 #### R_E-P: `125.86`
 - The transition rate from exposed to presymptomatic
 - See table S7 for Timing of Covid Pandemic Pekar et al.; The latent period in days of the virus is estimated to be 2.9. In years (the unit of time for this simulation) the period is $2.9 / 365$, and its reciprocal is $365/2.9=125.86$.
 #### R_P-A: `134.89`
 - The transition rate from presymptomatic to unascertained
-- See table S7; (1-0.15)*365/2.3
+- See table S7; The presymptomatic period in days is 2.3 and the rate of unascertainment is $1 - 0.15$. To find the transition rate we perform $(1-0.15) * 365 / 2.3$.
 #### R_P-I: `23.80`
 - The transition rate from presymptomatic to ascertained infectious 
-- See table S7; 0.15*365/2.3
+- See table S7; The presymptomatic period in days is 2.3 and the ascertainment rate is 0.15. To find the transition rate we perform $0.15 * 365 / 2.3$.
 #### R_A-R: `125.86`
 - The transition rate from unascertained to removed
-- See table S7; 365/2.9 is the reciprocal of the expected time for arrival to move from an unascertained case to either being removed or recovered.
+- See table S7; $365/2.9$ is the reciprocal of the expected time for arrival to move from an unascertained case to either being removed or recovered.
 #### R_I-H: `17.38`
 - The transition rate from ascertained infectious to hospitalized
-- See table S7. The expected arrival time of hospitalization is 21 days / 365 days (1 year), and since transition rates are in terms of the reciprocal of expected arival, we use 365/21.
+- See table S7. The expected arrival time of hospitalization is 21 days / 365 days (1 year), and since transition rates are in terms of the reciprocal of expected arival, we use $365/21$.
 #### R_I-R: `125.86`
 - The transition rate from ascertained infectious to removed
-- See table S7; 365/2.9 is the reciprocal of the expected time for arrival to either be removed or recovered. 
+- See table S7; $365/2.9$ is the reciprocal of the expected time for arrival to either be removed or recovered. 
 #### R_H-R: `12.17`
 - The transition rate from hospitalized to removed
-- See table S7; 365/30 is the reciprocal of the expected time for someone in the hospital to either be removed or recovered.
+- See table S7; $365/30$ is the reciprocal of the expected time for someone in the hospital to either be removed or recovered.
 ___
 
 ## Sample Times:
