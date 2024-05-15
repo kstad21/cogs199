@@ -48,9 +48,9 @@ ___
 #### R_S-E: `0`
 - Transition rate from susceptible to exposed
 - See table S7, no infections from outside the contact network. 
-#### R_S-E_E: `(???)`
+#### R_S-E_E: `0`
 - The transition rate from susceptible to exposed induced by exposed neighbors
-- (???)
+- (???) Exposed neighbors can't expose someone else if they are not infected (knowingly or unknowingly). 
 #### R_S-E_P: `4.83`
 - The transtion rate from susceptible to exposed induced by presymptomatic neighbors 
 - See table S7; 0.55*0.385*365/16
@@ -62,7 +62,7 @@ ___
 - See table S7; 0.55*0.385*365/16
 #### R_E-P: `125.86`
 - The transition rate from exposed to presymptomatic
-- See table S7 for Timing of Covid Pandemic Pekar et al.; 365/2.9
+- See table S7 for Timing of Covid Pandemic Pekar et al.; The latent period in days of the virus is estimated to be 2.9. In years (the unit of time for this simulation) the period is $2.9 / 365$, and its reciprocal is $365/2.9=125.86$.
 #### R_P-A: `134.89`
 - The transition rate from presymptomatic to unascertained
 - See table S7; (1-0.15)*365/2.3
