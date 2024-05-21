@@ -126,7 +126,7 @@ ___
 - Real HIV trees have short internal branches close to the root and long leaves (cite or link to pic?). Since most phylogenetic models don't produce this shape easily, a rate function that is high early in the timeline, decreasing as time progresses, can be used in non-homogeneous Yule processes to replicate a pattern reminiscent of real HIV trees.
 #### rate_func (Rate function of the initial tree): $`e^-(t^2)+1`$
 - Chosen to emulate short branches close to the base of the tree.
-#### height: '36'
+#### height: `36`
 - Scaled so that height matches the 1980 tMRCA estimate using SD [(Moshiri et al., 2019)](https://academic.oup.com/bioinformatics/article/35/11/1852/5161084).
 
 ## Mutation Rates: 
@@ -170,7 +170,7 @@ ___
 #### r_C-G (Transition rate between C and G): `0.971`
 #### r_C-T (Transition rate between C and T): `9.934`
 #### r_G-T (Transition rate between G and T): `1.000`
-- These frequencies were pulled from the FAVITES paper, which used parameters inferred by IQ-TREE [(Moshiri et al., 2019)](https://academic.oup.com/bioinformatics/article/35/11/1852/5161084).
+- These frequencies and transition rates were pulled from the FAVITES paper, which used parameters inferred by IQ-TREE [(Moshiri et al., 2019)](https://academic.oup.com/bioinformatics/article/35/11/1852/5161084).
 #### alpha: `0.405`
 - The shape parameter of Gamma model of rate heterogeneity.
 - We pull substitution probabilities from a Gamma distribution. An alpha of < 1 tells us that there is a lot of variance between substitution sites. 
