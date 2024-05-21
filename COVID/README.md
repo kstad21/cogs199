@@ -6,7 +6,8 @@
 - The Barabasi-Albert network's scale-free properties "recapitulate infectious disease spread" (Pekar et al., 2021). For example, scale-free networks can model "hubs", which illustrates the idea that somewhere with more infections would be more likely to accumulate even more infections.
 #### Number of nodes: `10000`
 - Picked an even, easy to work with number.
-#### m (# edges attached from new to existing nodes): `8`
+#### m: `8`
+-  \# edges attached from new to existing nodes.
 - 2m is equal to the expected degree, which is set to an intermediate value of 16 contacts per day ([Mossong et. al](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0050074)).
 ___
 
