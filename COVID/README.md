@@ -50,7 +50,7 @@ ___
 - See table S7, no infections from outside the contact network. 
 #### R_S-E_E: `0`
 - The transition rate from susceptible to exposed induced by exposed neighbors
-- (???) Exposed neighbors can't expose someone else if they are not infected (knowingly or unknowingly). 
+- Exposed neighbors can't expose someone else if they are not infected (knowingly or unknowingly). 
 #### R_S-E_P: `4.83`
 - The transtion rate from susceptible to exposed induced by presymptomatic neighbors 
 - See table S7; The ratio of transmission of unascertained to ascertained cases is 0.55 and the transmission rate of ascertained cases is 0.385. There are an estimated 16 contacts per day. To get the transmission rate, we perform $`0.55*0.385*365/16`$.
@@ -99,7 +99,7 @@ ___
 ## Viral Phylogeny (Seeds):
 #### Describe the topology and branch lengths (in time units) of the viral phylogeny prior to the epidemic (viral phylogeny of the seed individuals).
 #### Model: `Coalescent (Neutral)`
-- (???) "For each infected individual in these simulations, a single viral lineage was randomly sampled uniformly across the duratiton of infection to represent viral genotype sampling. If a simulation failed to converge, it was rerun until it successfully achieved coalescence'...
+- The [neutral coalescent model](https://en.wikipedia.org/wiki/Coalescent_theory) helps to model variation in DNA sequences due to genetic drift and/or mutation. 
 ___
 ## Mutation Rates:
 #### Describe how mutation rates (mutations/time) are sample along each branch of the viral time phylogeny.
