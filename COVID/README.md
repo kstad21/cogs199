@@ -13,7 +13,7 @@ ___
 
 ## Transmission Network:
 #### Describe how the virus moves through the contact network, based on transition rates for individuals in our simulation. Transition rates are based on the reciprocal of expected time to arrival (make sure to keep track of your 'time' units!). 
-#### Model: SAPHIRE
+#### Model: `SAPHIRE`
 - This model was developed specifically to illustrate the dynamics of COVID-19 transmission, with states to model presymptomatic phases, testing, hospitalization, and more. See below for each state and its abbreviation ([Hao et. al](https://www.nature.com/articles/s41586-020-2554-8)).
 - S: Susceptible; A: Unascertained case; P: Presymptomatic Infectious Case; H: Hospitalized Case; I: Ascertained Infectious Case; R: Removed; E: Exposed
 
@@ -116,13 +116,11 @@ ___
 - The value of the COVID-19 genome is around 30,000 bases.
 - Frequencies (see below) were calculated using the [NCBI reference sequence for Wuhan-Hu-1, complete genome](https://www.ncbi.nlm.nih.gov/nuccore/1798174254).
 #### p_A: `0.299`
-- The frequency of base A is
 #### p_C: `0.184`
-- The frequency of base C is
 #### p_G: `0.196`
-- The frequency of base G is
 #### p_T: `0.321`
-- The frequency of base T is
+- Frequency of A, C, G, T bases (respectively).
+
 ___
 ## Sequence Evolution:
 #### Describe how sequences evolve down the phylogeny.
@@ -140,10 +138,9 @@ ___
 #### r_C-T: `7.58369`
 #### r_G-T: `1.00000`
 #### alpha: `1.039`
-- The shape parameter of Gamma model of rate heterogeneity
+- The shape parameter of Gamma model of rate heterogeneity.
 - We pull substitution probabilities from a Gamma distribution. An alpha of < 1 tells us that there is a lot of variance between substitution sites. 
 #### num_cats: `0`
-- The number of categories in discrete Gamma model (or 0 for continuous)
-- We are using a continuous Gamma distribution, so there are no categories. 
+- The number of categories in discrete Gamma model (or 0 for continuous).
 #### prop_invariable: `0.521`
-- Proportion of invariable sites
+- Proportion of invariable sites.
