@@ -3,7 +3,7 @@
 ## Contact Network:
 #### Through nodes (people) and edges (interactions), describe social interaction.
 #### Model: `Barabasi-Albert (BA)`
-- The Barabasi-Albert network's scale-free properties "recapitulate infectious disease spread" (Cite?). For example, scale-free networks can model "hubs", which illustrates the idea that somewhere with more infections would be more likely to accumulate even more infections.
+- The Barabasi-Albert network's scale-free properties "recapitulate infectious disease spread" (Pekar et al., 2021). For example, scale-free networks can model "hubs", which illustrates the idea that somewhere with more infections would be more likely to accumulate even more infections.
 #### Number of nodes: `10000`
 - Picked an even, easy to work with number.
 #### m (# edges attached from new to existing nodes): `8`
@@ -59,7 +59,7 @@ ___
 - See table S7; The transmission rate of ascertained cases is 0.385. There are an estimated 16 contacts per day. To get the transmission rate, we perform $0.385*365/16$.
 #### R_S-E_A: `4.83`
 - The transition rate from susceptible to exposed induced by unascertained neighbors
-- See table S7; We perform the same calculation as we did for R_S-E_P, as unascertained neighbors infect others because they are presymptomatic. (???)
+- See table S7; We perform the same calculation as we did for R_S-E_P, as unascertained neighbors infect others because they are presymptomatic.
 #### R_E-P: `125.86`
 - The transition rate from exposed to presymptomatic
 - See table S7 for Timing of Covid Pandemic Pekar et al.; The latent period in days of the virus is estimated to be 2.9. In years (the unit of time for this simulation) the period is $2.9 / 365$, and its reciprocal is $`365/2.9=125.86`$.
@@ -85,12 +85,10 @@ ___
 
 ## Sample Times:
 #### Describe when the individuals in the transmission network are sampled (sequenced). 
-#### Model: `Uniform`
-- "For each infected individual in these simulations, a single viral lineage was randomly sampled uniformly across the duration of infection to represent viral genotype sampling" (Pekar et. all supplemental).
+#### Model: `State Entry (Initial)`
+- We want to sample each infected individual as they enter the infected state (to somewhat mirror the idea of sequencing once having tested positive).
 #### sampled_states: `I`
-- We want to sample individuals once they are ascertained ....
-#### num_samples: 1
-- Each individual in state I is sampled once. 
+- We want to sample individuals after they are ascertained and infectious, since it's not practical to expect to consistently sequence those whose states have not yet been ascertained. 
 
 ___
 ## Viral Phylogeny (Transmissions):
@@ -129,23 +127,23 @@ ___
 ## Sequence Evolution:
 #### Describe how sequences evolve down the phylogeny.
 #### Model: `General Time-Reversible (GTR) + Gamma`
-- Adding on the Gamma parameter to the GTR model allows for variance in substitution probabilities for different sites. 
+- Adding on the Gamma parameter to the GTR model allows for variance in substitution probabilities for different sites.
+- NOTE: the following parameters were inferred by running IQ-Tree with the GTR+I+G model, which allows for a proportion of sites to be invariable.
 #### p_A: `0.299`
 #### p_C: `0.184`
 #### p_G: `0.196`
 #### p_T: `0.321`
-#### r_A-C: `0.52433`
-#### r_A-G: `2.65505`
-#### r_A-T: `0.43262`
-#### r_C-G: `0.38930`
-#### r_C-T: `7.66544`
+#### r_A-C: `0.52308`
+#### r_A-G: `2.65466`
+#### r_A-T: `0.42982`
+#### r_C-G: `0.38506`
+#### r_C-T: `7.58369`
 #### r_G-T: `1.00000`
-#### alpha: `0.194`
+#### alpha: `1.039`
 - The shape parameter of Gamma model of rate heterogeneity
 - We pull substitution probabilities from a Gamma distribution. An alpha of < 1 tells us that there is a lot of variance between substitution sites. 
 #### num_cats: `0`
 - The number of categories in discrete Gamma model (or 0 for continuous)
 - We are using a continuous Gamma distribution, so there are no categories. 
-#### prop_invariable: `(???)0.0001`
+#### prop_invariable: `0.521`
 - Proportion of invariable sites
-- See supplementary table 1 [invariant sites?](https://link.springer.com/article/10.1007/s42770-020-00321-1)
