@@ -7,7 +7,7 @@
 #### Number of nodes: `10000`
 - Picked an even, easy to work with number.
 #### m (number of edges attached from new to existing nodes): `2`
-- There are estimates of between 3-4 sexual partners over 10 years: ~3 in Wertheim et al. (2017) and 3-4 in Rosenberg et al. (2017). Expected degree (number of partners) is equal to 2*m, so we set m to 2.
+- There are estimates of between 3-4 sexual partners over 10 years: ~3 in [Wertheim et al. (2018)](https://scholar.google.com/scholar_lookup?title=Growth%20of%20HIV-1%20molecular%20transmission%20clusters%20in%20New%20York%20city&author=J.O.%20Wertheim&publication_year=2018&journal=J.%20Infect.%20Dis&volume=218&pages=1943-1953) and 3-4 in [Rosenberg et al. (2011)](https://scholar.google.com/scholar_lookup?title=Number%20of%20casual%20male%20sexual%20partners%20and%20associated%20factors%20among%20men%20who%20have%20sex%20with%20men%3A%20results%20from%20the%20National%20HIV%20Behavioral%20Surveillance%20system&author=E.S.%20Rosenberg&publication_year=2011&journal=BMC%20Public%20Health&volume=11&pages=189). Expected degree (number of partners) is equal to 2*m, so we set m to 2.
 ___
 
 
