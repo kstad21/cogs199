@@ -60,7 +60,7 @@ ___
 - See table S7; The transmission rate of ascertained cases is 0.385. There are an estimated 16 contacts per day. To get the transmission rate, we perform $0.385*365/16$.
 #### R_S-E_A: `4.83`
 - The transition rate from susceptible to exposed induced by unascertained neighbors
-- See table S7; We perform the same calculation as we did for R_S-E_P, as unascertained neighbors infect others because they are presymptomatic.
+- See table S7; We perform the same calculation as we did for `R_S-E_P`, as unascertained neighbors infect others because they are presymptomatic.
 #### R_E-P: `125.86`
 - The transition rate from exposed to presymptomatic
 - See table S7 for Timing of Covid Pandemic Pekar et al.; The latent period in days of the virus is estimated to be 2.9. In years (the unit of time for this simulation) the period is $2.9 / 365$, and its reciprocal is $`365/2.9=125.86`$.
@@ -127,7 +127,7 @@ ___
 #### Describe how sequences evolve down the phylogeny.
 #### Model: `General Time-Reversible (GTR) + Gamma`
 - Adding on the Gamma parameter to the GTR model allows for variance in substitution probabilities for different sites.
-- NOTE: the following parameters were inferred by running IQ-Tree with the GTR+I+G model, which allows for a proportion of sites to be invariable.
+- NOTE: the following parameters were inferred by running `IQ-Tree` with the `GTR+I+G model`, which allows for a proportion of sites to be invariable.
 #### p_A: `0.299`
 #### p_C: `0.184`
 #### p_G: `0.196`
