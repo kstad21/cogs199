@@ -149,21 +149,21 @@ ___
 - A simple option with the ability to define the frequency of each base.
 #### k (Length of ancestral sequence): `9200`
 - The length of the HIV genome is about 9200 bases.
-- Frequences (see below) were calculated using the [NCBI reference sequence for HIV-1, complete genome](https://www.ncbi.nlm.nih.gov/nuccore/AF033819).
-#### p_A: `0.392`
-#### p_C: `0.164`
-#### p_G: `0.212`
-#### p_T: `0.232`
+- Frequences (see below) were calculated using the [NCBI reference sequence for HIV-1, complete genome](https://www.ncbi.nlm.nih.gov/nuccore/NC_001802.1?report=genbank).
+#### p_A: `0.3564`
+#### p_C: `0.1788`
+#### p_G: `0.2424`
+#### p_T: `0.2224`
 - Frequency of A, C, G, T bases (respectively).
 
 ## Sequence Evolution: 
 #### Describe how sequences evolve down the phylogeny.
 #### Model: `General Time-Reversible (GTR) + Gamma`
 - General Time-Reversible "doesn't care" whether a sequence is an ancestor or descendent. The Gamma parameter allows the number of substitutions per site to change, as sampled from the Gamma distribution.
-#### p_A (Frequency of A): `0.392`
-#### p_C (Frequency of C): `0.164`
-#### p_G (Frequency of G): `0.212`
-#### p_T (Frequency of T): `0.232`
+#### p_A (Frequency of A): `0.3564`
+#### p_C (Frequency of C): `0.1788`
+#### p_G (Frequency of G): `0.2424`
+#### p_T (Frequency of T): `0.2224`
 #### r_A-C (Transition rate between A and C): `1.812`
 #### r_A-G (Transition rate between A and G): `9.934`
 #### r_A-T (Transition rate between A and T): `0.718`
