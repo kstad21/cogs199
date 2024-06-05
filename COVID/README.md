@@ -100,7 +100,9 @@ ___
 ## Viral Phylogeny (Seeds):
 #### Describe the topology and branch lengths (in time units) of the viral phylogeny prior to the epidemic (viral phylogeny of the seed individuals).
 #### Model: `Coalescent (Neutral)`
-- The [neutral coalescent model](https://en.wikipedia.org/wiki/Coalescent_theory) helps to model variation in DNA sequences due to genetic drift and/or mutation. 
+- The [neutral coalescent model](https://en.wikipedia.org/wiki/Coalescent_theory) helps to model variation in DNA sequences due to genetic drift and/or mutation.
+#### Height: `0.0833`
+- The time of most recent common ancestor was estimated to be sometime in November/December, so we set it to be around a month (30 days).
 ___
 ## Mutation Rates:
 #### Describe how mutation rates (mutations/time) are sample along each branch of the viral time phylogeny.
